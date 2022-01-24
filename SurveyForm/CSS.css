@@ -1,0 +1,72 @@
+body {
+  color: white;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(0deg,
+      rgba(0,0,128,0.2),
+      rgba(190,190,0,0.3)
+    ),
+    url(https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.center-text{
+  text-align: center;
+}
+.left-text{
+  text-align:left;
+}
+form{
+  background: rgba(0,0,150,0.4);
+  border-radius: 50px;
+  max-width: 60%;
+  margin: auto;
+}
+.padding{
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+}
+.center-elem{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.inputs{
+  maxwidth:100%;
+  width:100%;
+  border-style: inset;
+  border-radius: 7px;
+  box-shadow: 1px 1px rgba(191,191,191,0.2);
+  height:40px;
+}
+.submit-button{
+  background: rgb(160,209,45,0.9);
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 900px) {
+  .inputs{
+    height:30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .inputs{
+    height:20px;
+  }
+}
+
+p{
+  font-style: italic;
+}
